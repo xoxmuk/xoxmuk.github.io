@@ -21,7 +21,7 @@ export const Footer = ({ dict, className = '' }: FooterProps) => {
       <div className="mx-auto max-w-5xl px-4 py-10">
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          
+
           {/* Brand & Description */}
           <div>
             <p className="font-bold text-lg text-neutral-900 dark:text-white mb-1">
