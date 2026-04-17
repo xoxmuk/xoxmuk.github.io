@@ -6,12 +6,12 @@
 export const PORTFOLIO_CONFIG = {
   // Основная информация
   name: 'xoxmuk',
-  
+
   // Социальные ссылки
   socials: {
     github: 'https://github.com/xoxmuk',
     telegram: 'https://t.me/xoxmuk',
-    email: 'xoxmuk@example.com',
+    email: 'xoxmuk.@gmail.com',
   },
 
   // Технологии с иконками и ссылками
