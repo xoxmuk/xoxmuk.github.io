@@ -1,6 +1,6 @@
 import type { Dictionary } from '@/i18n/types'
 import { SITE_CONFIG, SOCIAL_LINKS } from '@/shared/constants'
-import { Github, Telegram, Mail } from 'lucide-react'
+import { Code2, Send, Mail } from 'lucide-react'
 
 type FooterProps = {
   dict: Dictionary
@@ -9,8 +9,8 @@ type FooterProps = {
 }
 
 const socialIcons: Record<string, React.ReactNode> = {
-  GitHub: <Github size={16} />,
-  Telegram: <Telegram size={16} />,
+  GitHub: <Code2 size={16} />,
+  Telegram: <Send size={16} />,
 }
 
 export const Footer = ({ dict, className = '' }: FooterProps) => {
