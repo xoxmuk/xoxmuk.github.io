@@ -47,6 +47,7 @@ export interface Project {
   tags: string[]
   href?: string
   isNew?: boolean
+  category?: string // Category for grouping projects
 }
 
 // ─── Skill ─────────────────────────────────────────────────────────────────
@@ -54,4 +55,6 @@ export interface Skill {
   label: string
   emoji: EmojiName
   color?: string
+  iconName?: string // lucide-react icon name
+  href?: string // Optional link for clickable skills
 }

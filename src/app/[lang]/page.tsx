@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getDictionary } from '@/i18n'
-import { Avatar, Button, Emoji, Badge } from '@/shared/ui'
+import { Avatar, Button, Emoji, Badge, SkillBadge } from '@/shared/ui'
 import { SITE_CONFIG, SKILLS, SOCIAL_LINKS } from '@/shared/constants'
 
 type Props = { params: Promise<{ lang: string }> }
@@ -91,14 +91,7 @@ export default async function HomePage({ params }: Props) {
 
         <div className="flex flex-wrap gap-2">
           {SKILLS.map((skill) => (
-            <Badge
-              key={skill.label}
-              variant="outline"
-              className="py-1.5 px-3 text-sm gap-2"
-            >
-              <Emoji name={skill.emoji} size={16} />
-              {skill.label}
-            </Badge>
+            <SkillBadge key={skill.label} skill={skill} />
           ))}
         </div>
       </section>

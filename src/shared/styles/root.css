@@ -21,5 +21,9 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+html {
+  transition: background-color 0.3s ease-in-out;
 }

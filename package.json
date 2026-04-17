@@ -16,6 +16,7 @@
     "lint:all": "yarn lint:ts && yarn lint:es && yarn lint:fsd && yarn lint:style"
   },
   "dependencies": {
+    "lucide-react": "^1.8.0",
     "next": "16.2.1",
     "next-themes": "^0.4.6",
     "react": "19.2.4",

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { getDictionary } from '@/i18n'
 import { Emoji, Badge } from '@/shared/ui'
-import { PROJECTS } from '@/shared/constants'
+import { PROJECTS, APP_CATEGORIES } from '@/shared/constants'
 import type { Dictionary } from '@/i18n/types'
 
 type Props = { params: Promise<{ lang: string }> }
@@ -100,12 +100,25 @@ export default async function AppsPage({ params }: Props) {
         <p className="text-neutral-500 dark:text-neutral-400">{apps.subtitle}</p>
       </header>
 
-      {/* Grid — add/remove projects in src/shared/constants/index.ts */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {PROJECTS.map((project) => (
-          <ProjectCard key={project.id} project={project} dict={dict} />
-        ))}
-      </div>
+      {/* Grid by categories — add/remove projects and categories in src/shared/constants/index.ts */}
+      {Object.entries(APP_CATEGORIES).map(([categoryKey, categoryInfo]) => {
+        const categoryProjects = PROJECTS.filter((p) => p.category === categoryKey)
+        if (categoryProjects.length === 0) return null
+
+        return (
+          <section key={categoryKey} className="space-y-4">
+            <h2 className="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-white flex items-center gap-2">
+              <Emoji name={categoryInfo.emoji} size={24} />
+              {categoryInfo.label}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {categoryProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} dict={dict} />
+              ))}
+            </div>
+          </section>
+        )
+      })}
 
     </div>
   )
