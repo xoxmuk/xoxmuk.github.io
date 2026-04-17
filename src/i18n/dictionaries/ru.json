@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "xoxmuk",
+    "description": "Портфолио xoxmuk"
+  },
+  "header": {
+    "sections": {
+      "about": "Обо мне",
+      "apps": "Мини-приложения"
+    }
+  },
+  "footer": {
+    "description": "Делаю разную фигню",
+    "community": "Сообщество",
+    "community_items": ["GitHub", "Telegram"],
+    "support_title": "Проект",
+    "support_items": ["Обратная связь", "О проекте"],
+    "copyright": "© 2025-2026 xoxmuk. Все права защищены.",
+    "disclaimer": "Сделано с ❤️ на Next.js"
+  },
+  "home": {
+    "greeting": "Привет, я xoxmuk",
+    "role": "Фронтенд-разработчик и создатель мини-приложений",
+    "bio": "Делаю быстрые и доступные веб-приложения и Telegram мини-приложения. Люблю TypeScript и open-source.",
+    "cta_projects": "Мои проекты",
+    "cta_about": "Обо мне",
+    "skills_title": "Технологии"
+  },
+  "about": {
+    "title": "Обо мне",
+    "bio_1": "Я фронтенд-разработчик, который фокусируется на создании отличного пользовательского опыта. Люблю TypeScript, React и экосистему Telegram Mini App.",
+    "bio_2": "Когда не программирую — читаю документацию, экспериментирую с новыми инструментами или тусуюсь в open-source сообществах.",
+    "skills_title": "Навыки",
+    "contact_title": "Связаться",
+    "contact_cta": "Написать"
+  },
+  "apps": {
+    "title": "Мини-приложения",
+    "subtitle": "Коллекция небольших инструментов и экспериментов.",
+    "project1Title": "Портфолио v2",
+    "project1Desc": "Этот самый сайт — собран на Next.js, Tailwind v4 и с поддержкой i18n.",
+    "project2Title": "Трекер идей",
+    "project2Desc": "Лёгкое Telegram Mini App для захвата и организации идей на ходу.",
+    "project3Title": "UI-кит",
+    "project3Desc": "Набор переиспользуемых React-компонентов с полными TypeScript-типами.",
+    "tags_label": "Стек",
+    "view_label": "Смотреть"
+  }
+}

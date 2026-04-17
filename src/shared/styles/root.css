@@ -1,0 +1,25 @@
+:root {
+  --bg:           #ffffff;
+  --text:         #0a0a0a;
+  --border:       #e5e5e5;
+  --muted:        #737373;
+  --card:         #fafafa;
+  --accent:       #0a0a0a;
+  --accent-fg:    #ffffff;
+}
+
+.dark {
+  --bg:           #0a0a0a;
+  --text:         #fafafa;
+  --border:       #262626;
+  --muted:        #a3a3a3;
+  --card:         #141414;
+  --accent:       #fafafa;
+  --accent-fg:    #0a0a0a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s, color 0.2s;
+}

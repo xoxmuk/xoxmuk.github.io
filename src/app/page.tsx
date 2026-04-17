@@ -1,8 +1,6 @@
-export default function Page() {
-  return (
-    <div>
-      <h1>test</h1>
-      <p>test</p>
-    </div>
-  )
+import { redirect } from 'next/navigation'
+import { defaultLocale } from '@/i18n'
+
+export default function RootPage() {
+  redirect(`/${defaultLocale}`)
 }

@@ -1,18 +1,25 @@
-import { Footer } from "@/widgets/Footer"
-import { Header } from "@/widgets/Header"
+import { headers } from 'next/headers'
+import { ThemeProvider } from 'next-themes'
+import { defaultLocale, locales } from '@/i18n'
 
-export const metadata = {
-  title: 'xoxmuk',
-  description: 'by xoxmuk',
-}
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  const headersList = await headers()
+  const rawLocale = headersList.get('x-locale') ?? defaultLocale
+  const lang = locales.includes(rawLocale as typeof locales[number])
+    ? rawLocale
+    : defaultLocale
 
-export default function RootLayout({ children }: { children: React.ReactNode }) { return (
-    <html lang="ru">
+  return (
+    <html lang={lang} suppressHydrationWarning>
       <body>
-        <Header/>
-        <main>{children}</main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
-      <Footer/>
     </html>
   )
 }

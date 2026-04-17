@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "xoxmuk",
+    "description": "xoxmuk portfolio"
+  },
+  "header": {
+    "sections": {
+      "about": "About me",
+      "apps": "Mini apps"
+    }
+  },
+  "footer": {
+    "description": "Open developer building mini apps and tools.",
+    "community": "Community",
+    "community_items": ["GitHub", "Telegram"],
+    "support_title": "Project",
+    "support_items": ["Feedback", "About"],
+    "copyright": "© 2025-2026 xoxmuk. All rights reserved.",
+    "disclaimer": "Made with ❤️ on Next.js"
+  },
+  "home": {
+    "greeting": "Hey, I'm xoxmuk",
+    "role": "Frontend Developer & Mini-app Builder",
+    "bio": "I build fast, accessible web apps and Telegram mini-apps. Open-source enthusiast, TypeScript lover.",
+    "cta_projects": "See my projects",
+    "cta_about": "About me",
+    "skills_title": "Tech I work with"
+  },
+  "about": {
+    "title": "About me",
+    "bio_1": "I'm a frontend developer focused on building great user experiences. I love TypeScript, React, and the Telegram Mini App ecosystem.",
+    "bio_2": "When I'm not coding I'm reading docs, experimenting with new tools, or hanging out in open-source communities.",
+    "skills_title": "Skills",
+    "contact_title": "Get in touch",
+    "contact_cta": "Say hello"
+  },
+  "apps": {
+    "title": "Mini apps",
+    "subtitle": "A collection of small tools and experiments.",
+    "project1Title": "Portfolio v2",
+    "project1Desc": "This very site — built with Next.js, Tailwind v4 and i18n.",
+    "project2Title": "Idea tracker",
+    "project2Desc": "A lightweight Telegram Mini App to capture and organise ideas on the go.",
+    "project3Title": "UI kit",
+    "project3Desc": "A set of reusable React components with full TypeScript types.",
+    "tags_label": "Stack",
+    "view_label": "View"
+  }
+}
