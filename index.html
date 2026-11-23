@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xoxmuk.github.io</title>
     <style>
-        * {margin: 0, padding: 0}
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        header, footer { text-align: center; padding: 20px; }
-        main { max-width: 800px; margin: auto; }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;  min-height: 100vh; 
+    align-items: center;  justify-content: center;
+    overflow-x: hidden; margin: 25%;
+    display: flex; flex-direction: col; justify-content: center;
+    font-family: Arial, sans-serif; text-align: center;
+}
     </style>
 </head>
 <body>
