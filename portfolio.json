@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "title": "Моё портфолио",
+    "name": "xoxmuk",
+    "role": "Веб-разработчик",
+    "location": "Россия",
+    "description": "Создаю простые и удобные веб-сайты.",
+    "email": "xoxmuk@gmail.com",
+    "github": "https://github.com/xoxmuk"
+  },
+  "projects": [
+    {
+      "name": "Портфолио Windows XP",
+      "description": "Персональный сайт-портфолио в стиле классического интерфейса Windows XP.",
+      "url": "https://xoxmuk.github.io/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 90
+    },
+    {
+      "name": "CSS",
+      "level": 85
+    },
+    {
+      "name": "JavaScript",
+      "level": 75
+    },
+    {
+      "name": "PHP",
+      "level": 70
+    }
+  ]
+}
