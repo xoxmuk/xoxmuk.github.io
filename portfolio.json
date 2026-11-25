@@ -1,16 +1,16 @@
 {
   "profile": {
-    "title": "Моё портфолио",
+    "title": "xoxmuk.github.io",
     "name": "xoxmuk",
     "role": "Веб-разработчик",
     "location": "Россия",
-    "description": "Создаю простые и удобные веб-сайты.",
+    "description": "Разработчик",
     "email": "xoxmuk@gmail.com",
     "github": "https://github.com/xoxmuk"
   },
   "projects": [
     {
-      "name": "Портфолио Windows XP",
+      "name": "Портфолио",
       "description": "Персональный сайт-портфолио в стиле классического интерфейса Windows XP.",
       "url": "https://xoxmuk.github.io/"
     }
