@@ -21,6 +21,10 @@
       "level": 90
     },
     {
+      "name": "PHP",
+      "level": 70
+    },
+    {
       "name": "CSS",
       "level": 85
     },
@@ -29,8 +33,36 @@
       "level": 75
     },
     {
-      "name": "PHP",
-      "level": 70
+      "name": "TypeScript",
+      "level": 75
+    },
+    {
+      "name": "Next.js",
+      "level": 75
+    },
+    {
+      "name": "React.js",
+      "level": 75
+    },
+    {
+      "name": "React.ts",
+      "level": 75
+    },
+    {
+      "name": "Python",
+      "level": 75
+    },
+    {
+      "name": "Java",
+      "level": 75
+    },
+    {
+      "name": "C++",
+      "level": 75
+    },
+    {
+      "name": "GDScript",
+      "level": 75
     }
   ]
 }
