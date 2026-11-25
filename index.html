@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xoxmuk.github.io</title>
-    <style>
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;  min-height: 100vh; 
-    align-items: center;  justify-content: center;
-    overflow-x: hidden; padding: 40px;
-    display: flex; flex-direction: column; justify-content: center;
-    font-family: Arial, sans-serif; text-align: center;
-}
-
-main {
-    margin-left: auto; margin-right: auto; 
-    display: flex;
-    height: 100%; width: 100%; max-width: 28rem; 
-    flex-direction: column; align-items: center; justify-content: center; 
-    gap: 1rem; padding: 1rem;
-}
-
-footer { flex-direction: row }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h2>Welcome</h2>
-    </main>
+  <main class="desktop">
+    <section class="window" aria-label="Портфолио">
+      <header class="titlebar">
+        <div class="title"><span class="title-icon">🗂️</span><span id="pageTitle">Моё портфолио</span></div>
+        <div class="window-controls" aria-hidden="true">
+          <button>_</button><button>□</button><button class="close">×</button>
+        </div>
+      </header>
 
-    <footer>
-        <small>© 2026 xoxmuk.github.io</small>
-    </footer>
+      <nav class="menubar" aria-label="Меню">
+        <button data-view="about"><u>О</u>бо мне</button>
+        <button data-view="projects"><u>П</u>роекты</button>
+        <button data-view="skills"><u>Н</u>авыки</button>
+        <button data-view="contact"><u>К</u>онтакты</button>
+      </nav>
+
+      <div class="toolbar">
+        <button id="backButton" title="Назад">←</button>
+        <button id="forwardButton" title="Вперёд">→</button>
+        <div class="address"><span>Адрес</span><div><span class="address-icon">🖥️</span><span id="addressText">Моё портфолио</span></div></div>
+      </div>
+
+      <div class="content">
+        <aside class="sidebar">
+          <article class="sidebar-panel">
+            <h2>Системные задачи</h2>
+            <div class="sidebar-links">
+              <button data-view="projects">Просмотреть проекты</button>
+              <button data-view="skills">Посмотреть навыки</button>
+              <button data-view="contact">Связаться со мной</button>
+            </div>
+          </article>
+        </aside>
+
+        <article class="main-area" id="mainArea">
+        </article>
+      </div>
+
+      <footer class="statusbar"><span id="statusText">3 объекта</span><span class="resize-grip"></span></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
