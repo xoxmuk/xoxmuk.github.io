@@ -3,49 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Моё портфолио</title>
+  <title></title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="desktop">
-    <section class="window" aria-label="Портфолио">
+    <section class="window" data-ui-aria="windowLabel">
       <header class="titlebar">
-        <div class="title"><span class="title-icon">🗂️</span><span id="pageTitle">xoxmuk.github.io</span></div>
+        <div class="title"><span class="title-icon" data-ui="windowIcon"></span><span id="pageTitle"></span></div>
         <div class="window-controls" aria-hidden="true">
-          <button>_</button><button>□</button><button class="close">×</button>
+          <button data-ui="minimizeIcon"></button><button data-ui="maximizeIcon"></button><button class="close" data-ui="closeIcon"></button>
         </div>
       </header>
 
-      <nav class="menubar" aria-label="Меню">
-        <button data-view="about"><u>О</u>бо мне</button>
-        <button data-view="projects"><u>П</u>роекты</button>
-        <button data-view="skills"><u>Н</u>авыки</button>
-        <button data-view="contact"><u>К</u>онтакты</button>
+      <nav class="menubar" data-ui-aria="menuLabel">
+        <button data-view="about" data-menu="about"></button>
+        <button data-view="projects" data-menu="projects"></button>
+        <button data-view="skills" data-menu="skills"></button>
+        <button data-view="contact" data-menu="contact"></button>
       </nav>
 
       <div class="toolbar">
-        <button id="backButton" title="Назад">←</button>
-        <button id="forwardButton" title="Вперёд">→</button>
-        <div class="address"><span>Адрес</span><div><span class="address-icon">🖥️</span><span id="addressText">Портфолио</span></div></div>
+        <button id="backButton" data-ui="backIcon" data-ui-title="backLabel"></button>
+        <button id="forwardButton" data-ui="forwardIcon" data-ui-title="forwardLabel"></button>
+        <div class="address"><span data-ui="addressLabel"></span><div><span class="address-icon" data-ui="addressIcon"></span><span id="addressText"></span></div></div>
       </div>
 
       <div class="content">
         <aside class="sidebar">
           <article class="sidebar-panel">
-            <h2>Системные задачи</h2>
+            <h2 data-ui="sidebarTitle"></h2>
             <div class="sidebar-links">
-              <button data-view="projects">Просмотреть проекты</button>
-              <button data-view="skills">Посмотреть навыки</button>
-              <button data-view="contact">Связаться со мной</button>
+              <button data-view="projects" data-sidebar="projects"></button>
+              <button data-view="skills" data-sidebar="skills"></button>
+              <button data-view="contact" data-sidebar="contact"></button>
             </div>
           </article>
         </aside>
 
-        <article class="main-area" id="mainArea">
-        </article>
+        <article class="main-area" id="mainArea"></article>
       </div>
 
-      <footer class="statusbar"><span id="statusText">3 объекта</span><span class="resize-grip"></span></footer>
+      <footer class="statusbar"><span id="statusText"></span><span class="resize-grip"></span></footer>
     </section>
   </main>
   <script src="script.js"></script>

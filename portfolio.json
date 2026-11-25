@@ -1,4 +1,78 @@
 {
+  "interface": {
+    "language": "ru",
+    "title": "xoxmuk.github.io",
+    "windowLabel": "Портфолио",
+    "windowIcon": "🗂️",
+    "minimizeIcon": "_",
+    "maximizeIcon": "□",
+    "closeIcon": "×",
+    "menuLabel": "Меню",
+    "menu": {
+      "about": "Обо мне",
+      "projects": "Проекты",
+      "skills": "Навыки",
+      "contact": "Контакты"
+    },
+    "backIcon": "←",
+    "forwardIcon": "→",
+    "backLabel": "Назад",
+    "forwardLabel": "Вперёд",
+    "addressLabel": "Адрес",
+    "addressIcon": "🖥️",
+    "sidebarTitle": "Системные задачи",
+    "sidebar": {
+      "projects": "Просмотреть проекты",
+      "skills": "Посмотреть навыки",
+      "contact": "Связаться со мной"
+    },
+    "statusDefault": "Портфолио",
+    "views": {
+      "about": {
+        "title": "Обо мне",
+        "icon": "👤",
+        "profileHeading": "Профиль",
+        "welcomeHeading": "Добро пожаловать",
+        "welcomeText": "Это моё портфолио — здесь собраны проекты, навыки и контакты.",
+        "nameLabel": "Имя:",
+        "locationLabel": "Местоположение:",
+        "githubLabel": "Мой GitHub"
+      },
+      "projects": {
+        "title": "Проекты",
+        "icon": "📁",
+        "countLabel": "Всего проектов: {count}",
+        "emptyText": "Проекты пока не добавлены.",
+        "openLabel": "Открыть проект ↗"
+      },
+      "skills": {
+        "title": "Навыки",
+        "icon": "🛠️",
+        "subtitle": "Технологии и инструменты",
+        "heading": "Мои навыки",
+        "emptyText": "Навыки пока не добавлены."
+      },
+      "contact": {
+        "title": "Контакты",
+        "icon": "✉️",
+        "subtitle": "Буду рад знакомству и новым проектам",
+        "heading": "Связаться со мной",
+        "emailLabel": "Email:",
+        "githubLabel": "GitHub:"
+      },
+      "error": {
+        "title": "Ошибка загрузки",
+        "subtitle": "Не удалось получить данные портфолио.",
+        "message": "Проверьте, что файл portfolio.json доступен рядом со страницей.",
+        "status": "Ошибка"
+      }
+    },
+    "status": {
+      "projects": "{count} объект(ов)",
+      "skills": "{count} навыков",
+      "error": "Ошибка"
+    }
+  },
   "profile": {
     "title": "xoxmuk.github.io",
     "name": "xoxmuk",
